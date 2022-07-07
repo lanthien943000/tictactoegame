@@ -8,7 +8,8 @@ function Game() {
 
   //Declaring a Winner
   useEffect(() => {
-    "Your code here";
+    const newWinner = calculateWinner(squares);
+    setWinner(newWinner);;
   }, [squares]);
 
   //function to check if a player has won.
