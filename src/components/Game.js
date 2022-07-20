@@ -54,14 +54,14 @@ function Game() {
   };
 
   //Restart game
-  const handlRestart = () => {
+  const handleRestart = () => {
     setSquares(Array(9).fill(null));
     setXIsNext(true);
   };
 
   return (
     <div className="main">
-      <h2 className="result">Winner is: {winner ? winner : "N/N"}</h2>
+      <h2 className="result">Winner is: {winner ? winner : "N/N"}></h2>
       <div className="game">
         <span className="player">Next player is: {xIsNext ? "X" : "O"}</span>
         <Board squares={squares} handleClick={handleClick} />
